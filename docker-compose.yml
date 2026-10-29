@@ -1,0 +1,12 @@
+services:
+  ponto-service:
+    image: guilhermejr/sistema-ponto-service
+    container_name: ponto-service
+    restart: always
+    ports:
+      - "9012:9012"
+
+networks:
+  default:
+    external: true
+    name: rede
