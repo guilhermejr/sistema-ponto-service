@@ -4,7 +4,7 @@ services:
     container_name: ponto-service
     restart: always
     ports:
-      - "9012:9012"
+      - "127.0.0.1:9012:9012"
 
 networks:
   default:
