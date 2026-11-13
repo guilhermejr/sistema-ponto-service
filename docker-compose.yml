@@ -3,6 +3,7 @@ services:
     image: guilhermejr/sistema-ponto-service
     container_name: ponto-service
     restart: always
+    env_file: /home/guilhermejr/secrets/ponto-service.env
     ports:
       - "127.0.0.1:9012:9012"
 
